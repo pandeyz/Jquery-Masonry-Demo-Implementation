@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title>Masonry Layout with Mazonry Plugin</title>
+	
+	<style>
+	* {
+	  -webkit-box-sizing: border-box;
+	     -moz-box-sizing: border-box;
+		  box-sizing: border-box;
+	}
+
+	.item {
+	  border: 1px solid #333;
+	}
+	
+	</style>
+</head>
+<body>
+	<div id='masonry' >
+		<div class="item"><img src="images/1.jpg">1</div>
+		<div class="item"><img src="images/2.jpg">2</div>
+		<div class="item"><img src="images/3.jpg">3</div>
+		<div class="item"><img src="images/4.jpg">4</div>
+		<div class="item"><img src="images/5.jpg">5</div>
+		<div class="item"><img src="images/6.jpg">6</div>
+		<div class="item"><img src="images/7.jpg">7</div>
+		<div class="item"><img src="images/8.jpg">8</div>
+		<div class="item"><img src="images/9.jpg">9</div>
+	</div>
+<script src='masonry.pkgd.min.js'></script>
+<script>
+var container = document.querySelector('#masonry');
+var msnry = new Masonry( container, {
+  columnWidth: 50,
+  itemSelector: '.item'
+});
+</script>
+
+
+</body>
+</html>
